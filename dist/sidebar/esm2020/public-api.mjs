@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of sidebar
+ */
+export * from './lib/sidebar.service';
+export * from './lib/sidebar.component';
+export * from './lib/sidebar.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL3NpZGViYXIvc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLHVCQUF1QixDQUFDO0FBQ3RDLGNBQWMseUJBQXlCLENBQUM7QUFDeEMsY0FBYyxzQkFBc0IsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2Ygc2lkZWJhclxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vbGliL3NpZGViYXIuc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9zaWRlYmFyLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9zaWRlYmFyLm1vZHVsZSc7ICBcblxuIl19

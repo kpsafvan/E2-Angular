@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of topbar
+ */
+export * from './lib/topbar.service';
+export * from './lib/topbar.component';
+export * from './lib/topbar.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL3RvcGJhci9zcmMvcHVibGljLWFwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7R0FFRztBQUVILGNBQWMsc0JBQXNCLENBQUM7QUFDckMsY0FBYyx3QkFBd0IsQ0FBQztBQUN2QyxjQUFjLHFCQUFxQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiB0b3BiYXJcbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi90b3BiYXIuc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi90b3BiYXIuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL3RvcGJhci5tb2R1bGUnO1xuIl19
