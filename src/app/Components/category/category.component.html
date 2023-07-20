@@ -1,0 +1,43 @@
+<h1>Categories</h1>
+<button (click)="create()">Add</button>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Category Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Parent</th>
+      <th scope="col">IsDeleted</th>
+      <th scope="col">Product</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr scope="row" *ngFor="let row of TableData">
+      <td>
+        {{
+          row.categoryId
+        }}
+       </td>
+     <td>
+      {{
+        row.name
+      }}
+
+     </td>
+     <td>
+      {{
+        row.parent
+      }}
+     </td>
+     <td>
+      {{
+        row.isDeleted
+      }}
+     </td> 
+     <td>
+      {{
+        row.product
+      }}
+     </td> 
+    </tr>
+  </tbody>
+</table>

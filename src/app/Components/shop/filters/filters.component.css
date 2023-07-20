@@ -1,0 +1,89 @@
+.container {
+  /* background-color: red; */
+  padding: 0rem;
+}
+.filter-heading {
+  padding: 1rem 0rem 0rem 1rem;
+  margin: 0rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: inherit;
+  max-width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.578);
+}
+.sub-heading {
+  padding: 1rem 0rem 1rem 1rem;
+  font-weight: 450;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.578);
+}
+.category-filter {
+  padding: 0rem 0rem 1rem 1rem;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.578);
+  max-height: 25vh;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.category-sub-heading {
+  padding-top: 1rem;
+  font-weight: 450;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+}
+.category-list {
+  margin-top: 0.5rem;
+}
+.category-sub-heading:not(.active) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price-filter {
+  padding: 1rem 0rem 1rem 1rem;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.578);
+}
+.price-sub-heading {
+  font-weight: 450;
+}
+.price-slider {
+  width: 100px;
+ 
+}
+.slider {
+  width: 60%;
+  margin-left: 0.5rem;
+}
+.brand-filter {
+  padding: 0rem 0rem 1rem 1rem;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.578);
+  max-height: 25vh;
+  /* overflow-y: scroll; */
+  overflow-x  : hidden;
+  scrollbar-width: thin;
+  scrollbar-color: blue;
+}
+.brand-sub-heading {
+  padding-top: 1rem;
+  font-weight: 450;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+}
+.brand-list {
+  margin-top: 0.5rem;
+}
+.brand-sub-heading:not(.active) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+}

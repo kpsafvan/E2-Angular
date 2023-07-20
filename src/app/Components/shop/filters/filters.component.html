@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="filter-heading">Filters</div>
+  <!-- <div class="sub-heading">Categories</div> -->
+  <div class="category-filter">
+    <label
+      class="category-sub-heading"
+      [class.active]="showCategoryFilter" 
+      (click)="showCategoryFilter = !showCategoryFilter"
+      >Category</label
+    ><br />
+    <div *ngIf="showCategoryFilter">
+      <div *ngFor="let category of mappedCategories">
+        <label>
+          <input
+            class="category-list"
+            type="checkbox"
+            (change)="filterUpdate()"
+            [(ngModel)]="category.isSelected"
+          />
+          {{ category.category }}
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="price-filter">
+    <label class="price-sub-heading">Price</label><br />
+    <mat-label class="from-label">From</mat-label>
+    <mat-slider
+      [min]="0"
+      [max]="10000"
+      color="primary"
+      class="slider"
+      [(ngModel)]="priceFilterMin"
+      (change)="onMinSliderChange(); filterUpdate()"
+    ></mat-slider>
+    {{ priceFilterMin }}
+    <br />
+    <mat-label>Upto</mat-label>
+    <mat-slider
+      [min]="0"
+      [max]="10000"
+      class="slider"
+      color="primary"
+      [(ngModel)]="priceFilterMax"
+      (change)="onMaxSliderChange(); filterUpdate()"
+    ></mat-slider>
+    {{ priceFilterMax }}
+  </div>
+  <div class="brand-filter">
+    <label
+      class="brand-sub-heading"
+      [class.active]="showBrandFilter"
+      (click)="showBrandFilter = !showBrandFilter"
+      >Brand</label
+    ><br />
+    <div *ngIf="showBrandFilter">
+      <div *ngFor="let brand of mappedBrands">
+        <label>
+          <input
+            class="brand-list"
+            type="checkbox"
+            [(ngModel)]="brand.isSelected"
+          />
+          {{ brand.brand }}
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="sort-bar">
+  <mat-label class="sort-label">Sort By</mat-label>
+  <mat-label
+    [class.sort-label]="true"
+    [class.active]="booltest"
+    (click)="lowToHigh()"
+    >Popular</mat-label
+  >
+  <mat-label
+    [class.sort-label]="true"
+    [class.active]="lowToHighBool"
+    (click)="lowToHigh()"
+    >Price--Low to High</mat-label
+  >
+  <mat-label
+    [class.sort-label]="true"
+    [class.active]="highToLowBool"
+    (click)="highToLow()"
+    >Price--High to Low</mat-label
+  >
+  <mat-label
+    [class.sort-label]="true"
+    [class.active]="nameSortBool"
+    (click)="nameSort()"
+    >Name</mat-label
+  >
+</div>
+<div class="product-grid-container">
+  <ng-container>
+    <div *ngFor="let ele of display">
+      <div *ngIf="ele.id == priceFiltered[0]">
+        <div class="product-grid-item">
+          <mat-icon class="favourite-icon">favorite</mat-icon>
+          <img [src]="ele.image" alt="Imageas" class="product-image" />
+          <div class="product-name">
+            <p>{{ ele.name }}</p>
+          </div>
+          <div class="product-price">
+            <p>₹ {{ ele.price }}</p>
+          </div>
+
+          <div class="product-description">
+            <p>
+              {{ ele.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

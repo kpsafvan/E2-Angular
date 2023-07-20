@@ -1,0 +1,8 @@
+<div *ngIf="topbar"  style="height:7.5%;margin-top: 0%;"><lib-Topbar></lib-Topbar></div>
+<div *ngIf="sidebar" style="height:100%;margin-top: 0%;">
+  <lib-Sidebar><router-outlet></router-outlet> </lib-Sidebar>
+</div>
+<div *ngIf="shop" style="height:100%;margin:0rem;width:100vw;padding: 0;"><router-outlet></router-outlet></div>
+
+<!-- <lib-Topbar></lib-Topbar>
+<lib-Sidebar><router-outlet></router-outlet> </lib-Sidebar> -->

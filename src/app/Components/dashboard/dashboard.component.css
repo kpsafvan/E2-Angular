@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  padding-top: 3%;
+  text-align: center;
+  color: #676767;
+  font-size: 2.5rem;
+}
+body {
+  /* background: linear-gradient(to bottom, #32292F,#32292F); */
+  margin: 0;
+  /* background-image: url("../../../assets/Images/Ecommerce background.jpg"); */
+  padding: 0;
+  background-color:#000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1 {
+  font-family: "Times New Roman";
+  font-size: 300%;
+}
+.tiles {
+  width: 100%;
+  height: 80%;
+  float: left;
+  margin-top: 2%;
+}
+.button {
+  /* background-color: #ffffff7c; */
+  border: none;
+  font-family: "Times New Roman";
+  color: white;
+  text-align: center; 
+  border-radius: 6%;
+  transition: background-color 0.5s ease;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 20%  20%  20%  20%  20%;
+  height: 50%;
+  /* grid-gap: 20px;*/
+}
+.grid-item {
+  display: grid;
+  margin-left: 2%;
+  text-align: center;
+  margin-top: 1%;
+  border-radius: 6%; 
+  background-color:#676767;
+  /*color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;*/
+}
+.tile-text{
+  font-size: 2rem;
+  color: white;
+}
+/* .button:hover {
+  background-color: #ce1b1b9b;
+} */
+.icons {
+  padding: 1% 1% 1% 1%;
+  /* border: 6px solid rgb(255, 255, 255); */
+  border-radius: 5%;
+  transition: opacity 0.5s ease;
+  filter: invert(100);
+  width: 100%;
+}
+.icons:hover {
+  opacity: 0.5;
+}

@@ -1,0 +1,28 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+h1 {
+    font-family: "Times New Roman";
+    font-size: 300%;
+  }
+
+  .heading {
+    padding-top: 3%;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.622);
+  
+    font-size: 2.5rem;
+  }

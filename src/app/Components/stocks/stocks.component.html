@@ -1,0 +1,41 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Stock Id</th>
+      <th scope="col">Quatity</th>
+      <th scope="col">Location Id</th>
+      <th scope="col">IsDeleted</th>
+      <th scope="col">Product Id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr scope="row" *ngFor="let row of TableData">
+      <td>
+        {{
+          row.stockId
+        }}
+       </td>
+     <td>
+      {{
+        row.quantity
+      }}
+
+     </td>
+     <td>
+      {{
+        row.locationId
+      }}
+     </td>
+     <td>
+      {{
+        row.isDeleted
+      }}
+     </td> 
+     <td>
+      {{
+        row.productId
+      }}
+     </td> 
+    </tr>
+  </tbody>
+</table>
